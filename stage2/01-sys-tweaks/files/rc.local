@@ -31,16 +31,7 @@ else
 
     printf "Bringing up hostapd\n"
     service hostapd restart
-    sleep 8
-
-    printf "Configuring wlan interface\n"
-    ifconfig $_WLAN_DEVICE $_APIP
-    sleep 8
-
-    printf "Configuring DNSMasq\n"
-    service dnsmasq restart
-    sleep 8
-
+    
     printf "You should now have an access point\n"
 fi
 
