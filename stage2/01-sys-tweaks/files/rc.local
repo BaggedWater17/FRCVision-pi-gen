@@ -29,8 +29,8 @@ else
     ifdown $_WLAN_DEVICE
     sleep 8
 
-    printf "Bringing up hostapd\n"
-    service hostapd restart
+    printf "Bringing up hotspot\n"
+    service hotspot restart
     
     printf "You should now have an access point\n"
 fi
