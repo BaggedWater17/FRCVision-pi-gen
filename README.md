@@ -1,10 +1,10 @@
 # PiBooter
 Forked from FRCVision and pi-gen.
 
-`
+```
 {% assign var = "{{ sth }}" %}
 {{ var }}
-`
+```
 ## Dependencies
 
 PiBooter/pi-gen runs on Debian based operating systems. Currently it is only supported on
