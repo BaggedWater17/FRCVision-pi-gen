@@ -2,12 +2,13 @@
 Forked from FRCVision and pi-gen.
 
 ## Dependencies
+[REPO_TITLE] = PiBooter
 
-pi-gen runs on Debian based operating systems. Currently it is only supported on
+PiBooter/pi-gen runs on Debian based operating systems. Currently it is only supported on
 either Debian Stretch or Ubuntu Xenial and is known to have issues building on
 earlier releases of these systems.
 
-To install the required dependencies for pi-gen you should run:
+To install the required dependencies for PiBooter you should run:
 
 ```bash
 apt-get install quilt parted realpath qemu-user-static debootstrap zerofree pxz zip \
