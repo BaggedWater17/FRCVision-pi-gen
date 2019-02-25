@@ -2,8 +2,9 @@
 Forked from FRCVision and pi-gen.
 
 
-% assign var = "bhi" %
-{{ var }}
+
+{{ var hi = "hi"}}
+{{hi}}
 
 ## Dependencies
 
