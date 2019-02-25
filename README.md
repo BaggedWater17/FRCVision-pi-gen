@@ -1,4 +1,5 @@
-# pi-gen edited
+# PiBooter
+Forked from FRCVision and pi-gen.
 
 ## Dependencies
 
