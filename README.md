@@ -2,7 +2,7 @@
 Forked from FRCVision and pi-gen.
 
 
-{% assign var = "bhi" %}
+% assign var = "bhi" %
 {{ var }}
 
 ## Dependencies
