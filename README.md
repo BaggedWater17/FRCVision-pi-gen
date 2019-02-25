@@ -1,8 +1,11 @@
 # PiBooter
 Forked from FRCVision and pi-gen.
 
-{ var hi = "hi" }
-{hi}
+{% highlight liquid %}
+  {% raw %}
+    {{ var hi }}
+  {% endraw %}
+{% endhighlight %}
 
 ## Dependencies
 
