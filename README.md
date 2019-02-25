@@ -1,9 +1,7 @@
 # PiBooter
 Forked from FRCVision and pi-gen.
 
-
-
-{{ var hi = "hi"}}
+{{% var hi = "hi" %}}
 {{hi}}
 
 ## Dependencies
