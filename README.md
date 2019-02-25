@@ -3,7 +3,7 @@ Forked from FRCVision and pi-gen.
 
 ## Dependencies
 
-{% hi = "pi"%}
+{% assign hi = "pi"%}
 
 {%hi%}
 
