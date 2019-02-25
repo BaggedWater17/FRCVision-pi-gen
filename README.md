@@ -2,7 +2,8 @@
 Forked from FRCVision and pi-gen.
 
 ## Dependencies
-{% assign REPO_TITLE = "PiBooter"%}
+
+{% assign REPO_TITLE = "PiBooter" %}
 {{REPO_TITLE}}
 
 PiBooter/pi-gen runs on Debian based operating systems. Currently it is only supported on
