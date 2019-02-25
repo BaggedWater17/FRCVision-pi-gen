@@ -1,6 +1,7 @@
 # PiBooter
 Forked from FRCVision and pi-gen.
 
+&#123 &#123
 {% assign var = "{{ sth }}" %}
 {{ var }}
 
