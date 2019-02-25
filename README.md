@@ -1,12 +1,6 @@
 # PiBooter
 Forked from FRCVision and pi-gen.
 
-{% highlight liquid %}
-  {% raw %}
-    {{ var hi }}
-  {% endraw %}
-{% endhighlight %}
-
 ## Dependencies
 
 PiBooter/pi-gen runs on Debian based operating systems. Currently it is only supported on
