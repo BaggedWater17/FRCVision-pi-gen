@@ -37,10 +37,9 @@ else
     service hotspot reboot    
     sleep 8
     
-    printf "Configuring wlan interface\n"
+    printf "Looking to see if wlan exists\n"
     ifconfig $_WLAN_DEVICE $_APIP
     sleep 8
-    
     
     printf "You should now have an access point\n"
 fi
