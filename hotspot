@@ -7,7 +7,8 @@ opt2="$2"
 opt3="$3"
 opt4="$4"
 #
-snam="hotspot"
+# Name of the hotspot
+snam="R1P47i04"
 eth_dev="eth0"
 # wli_dev: on board wlan (e.g. wlan0)
 # wle_dev: external wlan adaptor (optional)
