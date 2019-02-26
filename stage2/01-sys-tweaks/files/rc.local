@@ -31,6 +31,7 @@ else
     printf "Bringing up hotspot\n"
     service hotspot setup
     service hotspot modpar hostapd ssid R1P47i04
+    service hotspot modpar hostapd wpa_passphrase 4536
     service hotspot modpar hostapd autostart 1
     service hotspot modpar hostapd useiptables 1
     service hotspot reboot    
