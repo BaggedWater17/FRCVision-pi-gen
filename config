@@ -1,2 +1,2 @@
-IMG_NAME='RPiBooter'
+IMG_NAME='RPiBooter-frcvision'
 ENABLE_SSH=1
