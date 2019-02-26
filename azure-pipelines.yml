@@ -22,4 +22,4 @@ jobs:
         displayName: 'Build Image'
       - task: PublishBuildArtifacts@1
         inputs:
-          artifactName: 'FRCVisionImage'
+          artifactName: 'RPiBooterImage'
