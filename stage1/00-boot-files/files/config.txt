@@ -3,7 +3,7 @@
 # Some settings may impact device functionality. See link above for details
 
 # uncomment if you get no picture on HDMI for a default "safe" mode
-#hdmi_safe=1
+hdmi_safe=1
 
 # uncomment this if your display has a black border of unused pixels visible
 # and your display can output without overscan
@@ -11,15 +11,15 @@
 
 # uncomment the following to adjust overscan. Use positive numbers if console
 # goes off screen, and negative if there is too much border
-#overscan_left=16
-#overscan_right=16
-#overscan_top=16
-#overscan_bottom=16
+overscan_left=16
+overscan_right=16
+overscan_top=16
+overscan_bottom=16
 
 # uncomment to force a console size. By default it will be display's size minus
 # overscan.
-#framebuffer_width=1280
-#framebuffer_height=720
+framebuffer_width=1280
+framebuffer_height=720
 
 # uncomment if hdmi display is not detected and composite is being output
 #hdmi_force_hotplug=1
@@ -53,7 +53,7 @@
 # Additional overlays and parameters are documented /boot/overlays/README
 
 # Enable audio (loads snd_bcm2835)
-dtparam=audio=on
+#dtparam=audio=on
 
 # Enable camera
 start_x=1
