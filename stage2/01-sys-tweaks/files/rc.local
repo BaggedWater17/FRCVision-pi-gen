@@ -25,7 +25,6 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 else
     printf "No network interface has come up so let's configure the access point\n"
-
     ifdown $_WLAN_DEVICE
     sleep 8
 
