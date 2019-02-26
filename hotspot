@@ -1,32 +1,37 @@
 #!/bin/bash
 set +e
 
+# Hotspot version
 hotspotver="V0.913"
 opt1="$1"
 opt2="$2"
 opt3="$3"
 opt4="$4"
-#
-# Name of the hotspot
+
+# sname: Name of the hotspot
 snam="R1P47i04"
+
+# eth_dev: Ethernet port
 eth_dev="eth0"
+
+# if defined, automatic discovery disabled
 # wli_dev: on board wlan (e.g. wlan0)
 # wle_dev: external wlan adaptor (optional)
-# if defined, automatic discovery disabled
 wli_dev=""
 wle_dev=""
+
 ap_dev="ap0"
 ap_devmac="b8:27:eb:00:00:00"
 ap_net="10.3.141"
 ns_dom="local"
-#
+
 ap_ip="${ap_net}.1"
 ap_subn="${ap_net}.255"
 ap_ipanet="${ap_net}.1/24"
 ap_iptsubn="${ap_net}.0/24"
 ap_revip=`echo "$ap_ip" | awk -F "." '{ print $4"."$3"."$2"."$1 }'`
 ap_revnet=`echo "$ap_ip" | awk -F "." '{ print $3"."$2"."$1 }'`
-#
+
 if [ "$wli_dev" == "" ]; then
 # internal wlan adapter
   wli_devs=`ls -l --full-time /sys/class/net/ 2>/dev/null | grep -iE "mmc.*wlan" | cut -d" " -f9`
