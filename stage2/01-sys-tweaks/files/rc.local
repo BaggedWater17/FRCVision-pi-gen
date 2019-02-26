@@ -35,6 +35,11 @@ else
     service hotspot modpar hostapd autostart 1
     service hotspot modpar hostapd useiptables 1
     service hotspot reboot    
+    sleep 8
+    
+    printf "Configuring wlan interface\n"
+    ifconfig $_WLAN_DEVICE $_APIP
+    sleep 8
     
     
     printf "You should now have an access point\n"
