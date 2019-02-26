@@ -2,7 +2,7 @@
 set +e
 
 # Hotspot version
-hotspotver="V0.913"
+HOTSPOT_VERSION="V0.913"
 opt1="$1"
 opt2="$2"
 opt3="$3"
@@ -228,7 +228,7 @@ function Mdfy_Chan {
 
 function Hotspot_Start {
   Hotspot_Defines
-  logger -s -t $snam "starting  hotspot $hotspotver"
+  logger -s -t $snam "starting  hotspot $HOTSPOT_VERSION"
   logger -s -t $snam "  ETHER   $eth_dev    $eth_ip"
   logger -s -t $snam "  WLANint $wli_dev   $wli_ip"
   logger -s -t $snam "  WLANext $wle_dev   $wle_ip"
@@ -546,7 +546,7 @@ case "$opt1" in
             do_tor        "$opt2"
             ;;
     version)
-            echo "$hotspotver"
+            echo "$HOTSPOT_VERSION"
             ;;
      status)
             Hotspot_Status
