@@ -25,20 +25,20 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 else
     printf "No network interface has come up so let's configure the access point\n"
-    ifdown $_WLAN_DEVICE
+    #ifdown $_WLAN_DEVICE
     sleep 8
 
     printf "Bringing up hotspot\n"
-    service hotspot setup
-    service hotspot modpar hostapd ssid R1P47i04
-    service hotspot modpar hostapd wpa_passphrase 4536
-    service hotspot modpar hostapd autostart 1
-    service hotspot modpar hostapd useiptables 1
-    service hotspot reboot    
+    #service hotspot setup
+    #service hotspot modpar hostapd ssid R1P47i04
+    #service hotspot modpar hostapd wpa_passphrase 4536
+    #service hotspot modpar hostapd autostart 1
+    #service hotspot modpar hostapd useiptables 1
+    #service hotspot reboot    
     sleep 8
     
     printf "Looking to see if wlan exists\n"
-    ifconfig $_WLAN_DEVICE $_APIP
+    #ifconfig $_WLAN_DEVICE $_APIP
     sleep 8
     
     printf "You should now have an access point\n"
