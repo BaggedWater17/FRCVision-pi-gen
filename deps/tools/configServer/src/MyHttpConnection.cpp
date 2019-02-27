@@ -51,7 +51,7 @@ MyHttpConnection::MyHttpConnection(std::shared_ptr<wpi::uv::Stream> stream)
     auto self = shared_from_this();
 
     // Accept the upgrade
-    auto ws = m_websocketHelper.Accept(m_stream, "frcvision");
+    auto ws = m_websocketHelper.Accept(m_stream, "RPiBooter");
 
     // Connect the websocket open event to our connected event.
     // Pass self to delay destruction until this callback happens
