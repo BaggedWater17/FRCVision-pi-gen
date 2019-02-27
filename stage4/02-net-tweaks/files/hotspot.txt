@@ -7,7 +7,7 @@
 # Its length should be between 1 and 32 characters.
 #
 # Default value is ssid=Rpi Access Point
-ssid=4536_test_7
+ssid=4536_RasberryPi_test_1
 
 # `passphrase` is the password required to connect to the network.
 # Its length should be between 8 and 63 characters (WPA-PSK).
