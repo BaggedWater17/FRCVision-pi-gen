@@ -23,7 +23,7 @@ cp etc/hostapd/hostapd.conf /etc/hostapd/hostapd.conf
 cp etc/dnsmasq.d/rpi-access-point.conf /etc/dnsmasq.d/rpi-access-point.conf
 
 cp etc/systemd/system/rpi-access-point.service /etc/systemd/system/rpi-access-point.service
-cp usr/bin/rpi-access-point /usr/bin/rpi-access-point
+cp stage4/02-net-tweaks/files/rpi-access-point /stage4/02-net-tweaks/files/rpi-access-point
 
 systemctl enable rpi-access-point.service
 
