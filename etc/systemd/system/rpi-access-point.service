@@ -5,7 +5,7 @@ After=network-online.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/rpi-access-point
+ExecStart=/stage4/02-net-tweaks/files/rpi-access-point
 
 [Install]
 WantedBy=multi-user.target
