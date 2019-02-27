@@ -7,13 +7,13 @@
 # Its length should be between 1 and 32 characters.
 #
 # Default value is ssid=Rpi Access Point
-ssid=ExampleAccessPoint
+ssid=4536_test_7
 
 # `passphrase` is the password required to connect to the network.
 # Its length should be between 8 and 63 characters (WPA-PSK).
 #
 # Default value is passphrase=rpi_ap_pass
-passphrase=example_secret_passphrase
+passphrase=abdulsucks
 
 # hostname will be appendded to the SSID by default. The `hide_hostname` option
 # is used to prevent this behavior. This is convenient to differenciate hosts
