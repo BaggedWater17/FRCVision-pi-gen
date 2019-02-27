@@ -13,7 +13,7 @@ if [ -f $config_path ]; then
 
   log "Config file found at $config_path, activating access point"
 
-  hotspot_ssid=$(sed -n -e 's/^ssid=\(.\+\)$/\1/p' /boot/hotspot.txt)
+  hotspot_ssid=$(sed -n -e 's/^ssid=\(.\+\)$/\1/p' /stage4/02-net-tweaks/files/hotspot.txt)
 
   # 802.11i specs:
   # The length of the SSID information field is between 0 and 32 octets.
@@ -24,7 +24,7 @@ if [ -f $config_path ]; then
     hotspot_ssid="Rpi Access Point"
   fi
 
-  hide_hostname=$(sed -n -e 's/^hide_hostname=\(.\+\)$/\1/p' /boot/hotspot.txt)
+  hide_hostname=$(sed -n -e 's/^hide_hostname=\(.\+\)$/\1/p' /stage4/02-net-tweaks/files/hotspot.txt)
 
   if [ "$hide_hostname" != "1" ]; then
     # append the hostname to avoid ssid collision
@@ -33,7 +33,7 @@ if [ -f $config_path ]; then
 
   log "SSID will be '$hotspot_ssid'"
 
-  hotspot_passphrase=$(sed -n -e 's/^passphrase=\(.\+\)$/\1/p' /boot/hotspot.txt)
+  hotspot_passphrase=$(sed -n -e 's/^passphrase=\(.\+\)$/\1/p' /stage4/02-net-tweaks/files/hotspot.txt)
 
   # 802.11i specs:
   # A pass-phrase is a sequence of between 8 and 63 ASCII-encoded characters.
@@ -140,8 +140,8 @@ else
     kill "$wpa_pid"
   fi
 
-  log "Starting wpa_supplicant with config: /etc/wpa_supplicant/wpa_supplicant.conf"
-  wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf > /dev/null
+  log "Starting wpa_supplicant with config: /stage4/02-net-tweaks/files/wpa_supplicant/wpa_supplicant.conf"
+  wpa_supplicant -B -i wlan0 -c /stage4/02-net-tweaks/files/wpa_supplicant/wpa_supplicant.conf > /dev/null
 
   log "Access point DOWN"
 fi
