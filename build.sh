@@ -165,6 +165,8 @@ export ENABLE_SSH="${ENABLE_SSH:-0}"
 
 export BASE_DIR
 
+echo "IMG_NAME='RPiBooter'"
+
 export CLEAN
 export IMG_NAME
 export APT_PROXY
